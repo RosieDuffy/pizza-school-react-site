@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Modal = ({ open, onClose, course }) => {
   if (!open) return null; //if modal is not open, return null
   return (
@@ -17,7 +19,9 @@ const Modal = ({ open, onClose, course }) => {
           <h3>{course.title}</h3>
           <h4>{course.type}</h4>
           <p>{course.info}</p>
+          <Link to="/book">
           <button className="modal-btn">Book Now!</button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,8 +1,13 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPizzaSlice, faGraduationCap, faUtensils, faCakeCandles  } from "@fortawesome/free-solid-svg-icons";
+
+
+
 const About = () => {
   return (
     <>
-      <div className="intro" >
-        <img src="src/assets/award.png" alt="" />
+      <div className="intro">
+        <img src="public/assets/award.png" alt="" />
       </div>
       <div className="about" id="about">
         <div className="about-text">
@@ -12,28 +17,28 @@ const About = () => {
       </div>
       <div className="icons">
         <div className="icons-pizza">
-          <i className="fa-solid fa-pizza-slice fa-6x"></i>
+        <FontAwesomeIcon icon={faPizzaSlice} size="6x"/>
           <p>
             Learn to make pizza <br />
             from scratch
           </p>
         </div>
         <div className="icons-hat">
-          <i className="fa-solid fa-graduation-cap fa-6x"></i>
+        <FontAwesomeIcon icon={faGraduationCap} size="6x" />
           <p>
             Professional Chefs <br />
             teach you all they know
           </p>
         </div>
         <div className="icons-food">
-          <i className="fa-solid fa-utensils fa-6x"></i>
+        <FontAwesomeIcon icon={faUtensils} size="6x"  />
           <p>
             Enjoy your delicious <br />
             creations
           </p>
         </div>
         <div className="icons-party">
-          <i className="fa-solid fa-cake-candles fa-6x"></i>
+        <FontAwesomeIcon icon={faCakeCandles} size="6x"/>
           <p>
             Celebrate with a<br />
             pizza party!

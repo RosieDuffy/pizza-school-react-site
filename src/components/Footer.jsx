@@ -1,17 +1,25 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <>
       <footer>
         <div className="social-icons">
-          <a href="">
-            <i className="fa-brands fa-facebook fa-2x"></i>
-          </a>
-          <a href="">
-            <i className="fa-brands fa-instagram fa-2x"></i>
-          </a>
-          <a href="">
-            <i className="fa-brands fa-x-twitter fa-2x"></i>
-          </a>
+          <Link to="https://facebook.com/" target="_blank">
+            <FontAwesomeIcon icon={faFacebook} size="2x" />
+          </Link>
+          <Link to="https://instagram.com/" target="_blank">
+            <FontAwesomeIcon icon={faInstagram} size="2x" />
+          </Link>
+          <Link to="https://twitter.com/" target="_blank">
+            <FontAwesomeIcon icon={faTwitter} size="2x" />
+          </Link>
         </div>
         <div className="footer-text">
           <p>@ copyright all rights reserved Fairtown Pizza School</p>

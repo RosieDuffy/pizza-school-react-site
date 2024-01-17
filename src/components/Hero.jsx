@@ -4,10 +4,10 @@ const Hero = () => {
       <div className="hero">
         <img
           className="main-logo"
-          src="src/assets/Main logo-cropped.svg"
-          alt=""
+          src="/assets/Main logo-cropped.svg"
+          alt="Fairtown Pizza School logo"
         />
-        <img className="pizza" src="src/assets/logo-pizza-slice.png" alt="" />
+        <img className="pizza" src="/assets/logo-pizza-slice.png" alt="" />
       </div>
     </>
   );

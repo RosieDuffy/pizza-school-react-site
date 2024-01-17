@@ -6,7 +6,7 @@ const Header = () => {
       <nav className="nav-bar">
         <div className="logo">
           <Link to="header" spy={true} smooth={true} duration={500}>
-            <img src="src/assets/icon-pizza-slice.png" alt="" />
+            <img src="/assets/icon-pizza-slice.png" alt="" />
           </Link>
         </div>
         <ul className="nav-menu">

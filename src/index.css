@@ -90,9 +90,9 @@ h4 {
 /* About Styles */
 
 .intro {
-  background-image: url(src/assets/hands-dough.jpeg);
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-image: url(/assets/hands-dough.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   padding: 45rem 55rem 5rem 5rem;
 }
@@ -131,20 +131,12 @@ h4 {
   color: var(--dark-color);
 }
 
-.icons i {
-  width: 10rem;
-}
-
-.icons p {
-  color: var(--dark-color);
-}
-
 /* More Info Styles */
 
 .more-info {
-  background-image: url(src/assets/info-background.jpeg);
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-image: url(/assets/info-background.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   padding: 30em 7em;
 }
@@ -242,8 +234,9 @@ p {
 
 .courses-container {
   background-color: var(--dark-color);
-  background-image: url(src/assets/courses-background.jpg);
-  background-size: 100%;
+  background-image: url(/assets/courses-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 5rem 0 2rem 0;
   display: flex;
   justify-content: flex-end;
@@ -432,7 +425,7 @@ footer a {
 /* Booking Form Styles */
 
 .booking-container {
-  background-image: url(src/assets/booking-background.jpg);
+  background-image: url(/assets/booking-background.jpg);
   background-size: 100%;
   padding: 5rem 0 5rem 18rem;
   display: flex;

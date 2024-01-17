@@ -4,7 +4,7 @@ const Hero = () => {
       <div className="hero">
         <img
           className="main-logo"
-          src="/assets/Main logo-cropped.svg"
+          src="dist/assets/Main logo-cropped.svg"
           alt="Fairtown Pizza School logo"
         />
         <img className="pizza" src="/assets/logo-pizza-slice.png" alt="" />

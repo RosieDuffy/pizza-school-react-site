@@ -2,7 +2,6 @@ import teachers from "../data/teachers";
 
 const Teachers = () => {
 
-
 const getTeacherDiv = teachers.map((teacher) => {
   return (
     <div className="teacher" key={teacher.name}>

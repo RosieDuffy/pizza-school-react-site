@@ -7,7 +7,7 @@ const Hero = () => {
           src="./assets/Main logo-cropped.svg"
           alt="Fairtown Pizza School logo"
         />
-        <img className="pizza" src="/assets/logo-pizza-slice.png" alt="" />
+        <img className="pizza" src="./assets/logo-pizza-slice.png" alt="" />
       </div>
     </>
   );

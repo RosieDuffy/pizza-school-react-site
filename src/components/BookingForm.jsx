@@ -21,7 +21,7 @@ const BookingForm = () => {
         </Link>
         <div className="booking-form">
           <img
-            src="/assets/Main logo-cropped.svg"
+            src="./assets/Main logo-cropped.svg"
             alt="Fairtown Pizza School logo"
           />
           <h2>Booking Request</h2>

@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <>
       <div className="contact-container" id="contact">
-        <img src="./assets/location.png" alt="" />
+        <img src="./assets/location.jpg" alt="fairtown pizza school location" />
         <div className="contact">
           <div className="contact-location">
             <h2>Location</h2>
@@ -22,9 +22,7 @@ const Contact = () => {
           </div>
           <div className="contact-opening-hours">
             <h4>Opening Hours:</h4>
-            <ul>
-              <li>Mon-Sun: 9am - 9pm</li>
-            </ul>
+            <p>Mon-Sun: 9am - 9pm</p>
           </div>
         </div>
       </div>

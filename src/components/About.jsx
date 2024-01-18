@@ -16,28 +16,28 @@ const About = () => {
         </div>
       </div>
       <div className="icons">
-        <div className="icons-pizza">
+        <div className="icon">
         <FontAwesomeIcon icon={faPizzaSlice} size="6x"/>
           <p>
             Learn to make pizza <br />
             from scratch
           </p>
         </div>
-        <div className="icons-hat">
+        <div className="icon">
         <FontAwesomeIcon icon={faGraduationCap} size="6x" />
           <p>
             Professional Chefs <br />
             teach you all they know
           </p>
         </div>
-        <div className="icons-food">
+        <div className="icon">
         <FontAwesomeIcon icon={faUtensils} size="6x"  />
           <p>
             Enjoy your delicious <br />
             creations
           </p>
         </div>
-        <div className="icons-party">
+        <div className="icon">
         <FontAwesomeIcon icon={faCakeCandles} size="6x"/>
           <p>
             Celebrate with a<br />

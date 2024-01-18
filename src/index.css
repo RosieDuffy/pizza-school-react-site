@@ -16,7 +16,6 @@ body {
   padding: 0;
   font-family: "Nunito", serif;
   font-weight: 400;
-  height: 100%;
 }
 
 h4 {
@@ -25,25 +24,31 @@ h4 {
 
 /* Header Style */
 
-.nav-bar {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f0d67f9e;
-  position: fixed;
-  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 10;
+  margin-bottom: -90px;
+  height: 80px;
 }
 
 .nav-menu {
   display: flex;
-  gap: 3em;
   margin-right: 1.5em;
-  font-weight: 1000;
-  /* font-family: "Bevan", serif; */
-  font-size: clamp(1rem, -1.5rem + 3vw, 1.5rem);
+  gap: clamp(1rem, 3rem, 4rem);
   color: var(--red-color);
   list-style: none;
+}
+
+.nav-menu li {
+  font-weight: 1000;
+  font-size: clamp(1rem, -1.5rem + 3vw, 1.5rem);
 }
 
 .nav-menu a:hover {
@@ -57,48 +62,42 @@ h4 {
   cursor: pointer;
 }
 
-.logo img {
-  max-height: 80px;
+.header-logo {
+  max-height: 50px;
+  margin-left: 0.5rem;
+  cursor: pointer;
 }
 
 /* Hero Styles */
 
 .hero {
   background-color: var(--yellow-color);
-  padding: 7em 2em 3em 2em;
+  padding: 7rem 1rem 3rem 3rem;
+
   display: flex;
-  position: relative;
-}
-
-.hero h1 {
-  margin-top: 0;
-}
-
-.pizza {
-  max-height: 30vw;
-  z-index: 1;
-  position: absolute;
-  right: 8%;
 }
 
 .main-logo {
-  width: 55%;
-  margin-left: 15%;
-  z-index: 5;
+  width: 75vw;
+  margin: auto;
 }
 
 /* About Styles */
 
 .intro {
-  background-image: url(/assets/hands-dough.jpeg);
+  background-image: url(./assets/hands-dough.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 45rem 55rem 5rem 5rem;
+  height: 100vh;
+  position: relative;
 }
 
 .intro img {
+  position: absolute;
   width: 15vw;
+  left: 1em;
+  bottom: 1em;
 }
 
 .about {
@@ -112,12 +111,12 @@ h4 {
 
 .about-text {
   color: var(--red-color);
-  font-size: clamp(3rem, -1.5rem + 5vw, 7rem);
+  font-size: clamp(2.2rem, -1.5rem + 5vw, 7rem);
 }
 
 .about h2 {
   font-family: "Bevan", serif;
-  margin-top: -5rem;
+  margin-top: -3rem;
 }
 
 /* Icons Styles */
@@ -134,11 +133,11 @@ h4 {
 /* More Info Styles */
 
 .more-info {
-  background-image: url(/assets/info-background.jpeg);
+  background-image: url(./assets/info-background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 30em 7em;
+  height: 90vh;
 }
 
 .tagline {
@@ -146,7 +145,7 @@ h4 {
   text-align: center;
   margin: 0 auto;
   padding: 5rem;
-  font-size: clamp(1rem, -1.5rem + 2.5vw, 4rem);
+  font-size: clamp(1.25rem, -1.5rem + 2.5vw, 4rem);
 }
 
 /* Teachers Styles */
@@ -162,7 +161,7 @@ h4 {
   font-size: 7em;
   font-family: "Bevan", serif;
   color: var(--yellow-color);
-  font-size: clamp(4rem, -1.5rem + 9vw, 7rem);
+  font-size: clamp(2.2rem, -1.5rem + 9vw, 7rem);
 }
 
 .info-teachers {
@@ -227,16 +226,15 @@ p {
   margin: auto;
   color: var(--dark-color);
   text-align: center;
-  font-size: clamp(4rem, -1.5rem + 9vw, 7rem);
+  font-size: clamp(3rem, -1.5rem + 9vw, 7rem);
   font-family: "Bevan", serif;
   margin: 0;
 }
 
 .courses-container {
   background-color: var(--dark-color);
-  background-image: url(/assets/courses-background.jpg);
+  background-image: url(./assets/courses-background.jpg);
   background-position: center;
-  background-repeat: no-repeat;
   padding: 5rem 0 2rem 0;
   display: flex;
   justify-content: flex-end;
@@ -304,6 +302,7 @@ p {
 }
 
 .modal {
+  height: 95vh;
   max-width: 600px;
   width: 100%;
   position: fixed;
@@ -325,7 +324,7 @@ p {
   align-items: center;
   text-align: center;
   margin-top: 1rem;
-  padding: 2rem;
+  padding: 2rem 1rem;
   color: var(--dark-color);
 }
 
@@ -340,8 +339,7 @@ p {
 }
 
 .modal-content p {
-  margin: 2rem;
-  font-size: 1.2rem;
+  padding: 1rem;
 }
 
 .closeBtn {
@@ -360,7 +358,7 @@ p {
   border: none;
   padding: 1rem 2rem;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   cursor: pointer;
 }
 
@@ -387,11 +385,15 @@ p {
   color: var(--dark-color);
   text-align: right;
   font-size: clamp(1rem, -1.5rem + 3vw, 3rem);
-  padding: 0 2rem;
+  padding: 2rem;
 }
 
 .contact h2 {
   font-family: "Bevan", serif;
+}
+
+.contact ul {
+  padding: 0;
 }
 
 .contact li {
@@ -418,8 +420,8 @@ footer a {
 
 .footer-text p {
   font-size: clamp(0.8rem, -1.5rem + 2vw, 3rem);
-  padding-right: 1rem;
-  text-align: right;
+  padding: 1rem;
+  margin: 0;
 }
 
 /* Booking Form Styles */
@@ -427,13 +429,14 @@ footer a {
 .booking-container {
   background-image: url(/assets/booking-background.jpg);
   background-size: 100%;
-  padding: 5rem 0 5rem 18rem;
+
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: relative;
+  padding: 2rem;
 }
 
 .booking-form {
@@ -445,6 +448,7 @@ footer a {
   align-items: center;
   border-radius: 100px;
   color: var(--yellow-color);
+  text-align: center;
 }
 
 .form-inputs {
@@ -487,6 +491,11 @@ footer a {
   margin: 0;
 }
 
+.not-found {
+  padding: 5rem;
+  color: var(--red-color);
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 1500px) {
@@ -524,9 +533,22 @@ footer a {
   .icons {
     flex-wrap: wrap;
   }
+
+  .icon {
+    padding: 1rem;
+  }
 }
 
 @media only screen and (max-width: 650px) {
+  .nav-menu {
+    gap: 1.5em;
+    margin-right: 1.5em;
+    font-weight: 1000;
+    font-size: clamp(1rem, -1.5rem + 3vw, 1.5rem);
+    color: var(--red-color);
+    list-style: none;
+  }
+
   .course {
     display: block;
     padding: 1rem;
@@ -543,12 +565,11 @@ footer a {
     padding: 5rem 10rem;
   }
 
-  .icons i {
+  .icon {
     padding: 1rem;
   }
 
   .contact-container {
-    display: grid;
     grid-template-columns: 1fr;
     place-items: center;
     align-content: center;
@@ -557,5 +578,87 @@ footer a {
 
   .contact {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .teachers {
+    background-color: var(--dark-color);
+  }
+
+  .info-teachers {
+    all: unset;
+    display: block;
+  }
+
+  .info-teachers img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .teacher {
+    all: unset;
+  }
+
+  .overlay {
+    all: unset;
+    height: 100%;
+  }
+
+  .teacher:hover .overlay {
+    all: unset;
+  }
+
+  .text {
+    all: unset;
+    text-align: center;
+    color: var(--yellow-color);
+  }
+
+  .text h3 {
+    font-family: "Bevan", serif;
+    font-size: clamp(1.5rem, -1.5rem + 4vw, 3rem);
+  }
+  .text p {
+    margin: 0;
+    padding: 0 3rem 2rem 3rem;
+    font-size: clamp(0.8rem, -1.5rem + 4vw, 3rem);
+  }
+
+  .nav-menu {
+    gap: 1rem;
+    color: var(--red-color);
+    padding-left: 0;
+  }
+
+  .nav-menu li {
+    font-size: clamp(0.8rem, -1.5rem + 3vw, 1.5rem);
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+  }
+
+  .intro,
+  .more-info {
+    height: 50vh;
+  }
+
+  .booking-form {
+    height: 100%;
+    width: 90vw;
+  }
+
+  .form-inputs {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .modal-content p {
+    margin: 1rem;
+    font-size: 0.75rem;
   }
 }

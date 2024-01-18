@@ -6,8 +6,11 @@ import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename={"/pizza-school-react-site"}>
+    <BrowserRouter >
       <App />
     </BrowserRouter>
   </React.StrictMode>
 );
+
+
+// basename={"/pizza-school-react-site"}

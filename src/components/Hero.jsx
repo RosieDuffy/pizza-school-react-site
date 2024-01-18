@@ -1,13 +1,12 @@
 const Hero = () => {
   return (
     <>
-      <div className="hero">
+      <div className="hero" id="hero">
         <img
           className="main-logo"
-          src="./assets/Main logo-cropped.svg"
+          src="./assets/fairtown-pizza-school-logo.png"
           alt="Fairtown Pizza School logo"
         />
-        <img className="pizza" src="./assets/logo-pizza-slice.png" alt="" />
       </div>
     </>
   );

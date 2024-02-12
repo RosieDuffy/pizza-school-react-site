@@ -50,6 +50,7 @@ const About = () => {
         <h4>
           Immerse yourself in a culinary journey tailored for all skill levels.
           <br />
+          <br />
           Unleash your creativity, savor the art of pizza making, and join us
           for a slice of flavorful fun!
         </h4>

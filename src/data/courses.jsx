@@ -14,7 +14,7 @@ const courses = [
   {
     title: "Pizza Pros",
     type: "Experienced Pizza Course",
-    info: "For the true pizza aficionados seeking the pinnacle of pizza perfection, welcome to Pizza Pros! This advanced course is designed for those who already boast an impressive pizza-making skill set and want to take it to the next level. Dive into the world of artisanal techniques, explore unique regional styles, and refine your presentation skills. Elevate your pizza-making prowess to professional heights. Join us on this extraordinary journey, where every slice tells a story of passion, precision, and a love for the art of pizza. Prepare to be a true Pizza Pro!",
+    info: "For the true pizza aficionados seeking the pinnacle of pizza perfection, welcome to Pizza Pros! This advanced course is designed for those who already boast an impressive pizza-making skill set and want to take it to the next level. Explore unique regional styles, and refine your presentation skills. Elevate your pizza-making prowess to professional heights. Join us on this extraordinary journey, where every slice tells a story of passion, precision, and a love for the art of pizza. Prepare to be a true Pizza Pro!",
     img: "./assets/pizza-pros.jpg",
   },
   {

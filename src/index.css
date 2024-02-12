@@ -71,15 +71,38 @@ header {
 /* Hero Styles */
 
 .hero {
+  position: relative;
   background-color: var(--yellow-color);
-  padding: 7rem 1rem 3rem 3rem;
-
+  padding: 12rem 1rem 8rem 2rem;
   display: flex;
+  clip-path: polygon(100% 0, 100% 92%, 50% 100%, 0 91%, 0 0);
+  z-index: 3;
 }
 
 .main-logo {
-  width: 75vw;
+  width: 80vw;
   margin: auto;
+  animation: bounce2 2s ease;
+}
+
+@keyframes bounce2 {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-15px);
+  }
 }
 
 /* About Styles */
@@ -91,6 +114,8 @@ header {
   background-size: cover;
   height: 100vh;
   position: relative;
+  margin-top: -90px;
+  z-index: 1;
 }
 
 .intro img {
@@ -144,7 +169,7 @@ header {
   color: var(--dark-color);
   text-align: center;
   margin: 0 auto;
-  padding: 5rem;
+  padding: 3rem;
   font-size: clamp(1.25rem, -1.5rem + 2.5vw, 4rem);
 }
 
@@ -302,7 +327,6 @@ p {
 }
 
 .modal {
-  height: 95vh;
   max-width: 600px;
   width: 100%;
   position: fixed;
@@ -329,9 +353,10 @@ p {
 }
 
 .modal-content img {
-  width: 80%;
-  margin-left: 10%;
-  border-radius: 0%;
+  width: 20rem;
+  position: static;
+  right: 0;
+  border-radius: 0;
 }
 
 .modal-content h3 {
@@ -369,27 +394,35 @@ p {
 
 /* Contact Styles */
 .contact-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
   background-color: var(--yellow-color);
   align-items: center;
+  padding: 4rem;
 }
 
 .contact-container img {
   background-color: white;
-  width: 40vw;
+  width: 35%;
   height: auto;
 }
 
 .contact {
   color: var(--dark-color);
-  text-align: right;
+  text-align: left;
   font-size: clamp(1rem, -1.5rem + 3vw, 3rem);
-  padding: 2rem;
+  height: 100%;
+}
+
+.contact h2,
+.contact h4 {
+  font-family: "Bevan", serif;
+  margin-bottom: 0;
 }
 
 .contact h2 {
-  font-family: "Bevan", serif;
+  margin-top: 0;
 }
 
 .contact ul {
@@ -570,14 +603,26 @@ footer a {
   }
 
   .contact-container {
-    grid-template-columns: 1fr;
-    place-items: center;
-    align-content: center;
-    padding-top: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-container img {
+    width: 80%;
   }
 
   .contact {
     text-align: center;
+  }
+
+  .modal {
+    height: 90vh;
+    width: 90vw;
+   
+  }
+
+  .modal-content img {
+    width: 16rem;
   }
 }
 
@@ -660,5 +705,20 @@ footer a {
   .modal-content p {
     margin: 1rem;
     font-size: 0.75rem;
+  }
+
+  .main-logo {
+    width: 90vw;
+  }
+
+  .hero {
+    padding: 12rem 1rem 8rem 1rem;
+  }
+}
+
+
+@media only screen and (max-height: 750px) {
+  .modal-content img {
+    width: 10rem;
   }
 }

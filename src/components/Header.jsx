@@ -5,7 +5,7 @@ const Header = () => {
     <header>
       <Link to="hero" spy={true} smooth={true} duration={500}>
         <img
-          src="./assets/icon-pizza-slice.png"
+          src="./assets/icon-pizza-slice.webp"
           alt=""
           className="header-logo"
         />

@@ -2,10 +2,13 @@ const Contact = () => {
   return (
     <>
       <div className="contact-container" id="contact">
-        <img src="./assets/location.jpg" alt="fairtown pizza school location" />
+        <img
+          src="./assets/location.webp"
+          alt="fairtown pizza school location"
+        />
         <div className="contact">
           <div className="contact-location">
-            <h2>Location</h2>
+            <h3>Location</h3>
             <p>
               Located in the heart of Fairtown, within easy walking distance of
               public transport. <br />

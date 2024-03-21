@@ -83,6 +83,7 @@ header {
   width: 80vw;
   margin: auto;
   animation: bounce2 2s ease;
+  filter: drop-shadow(5px 5px 10px #00000061);
 }
 
 @keyframes bounce2 {
@@ -108,7 +109,7 @@ header {
 /* About Styles */
 
 .intro {
-  background-image: url(./assets/hands-dough.jpg);
+  background-image: url(dist/assets/hands-dough.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -158,7 +159,7 @@ header {
 /* More Info Styles */
 
 .more-info {
-  background-image: url(./assets/info-background.jpg);
+  background-image: url(./assets/info-background.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -258,7 +259,7 @@ p {
 
 .courses-container {
   background-color: var(--dark-color);
-  background-image: url(./assets/courses-background.jpg);
+  background-image: url(./assets/courses-background.webp);
   background-position: center;
   padding: 5rem 0 2rem 0;
   display: flex;
@@ -415,13 +416,13 @@ p {
   height: 100%;
 }
 
-.contact h2,
+.contact h3,
 .contact h4 {
   font-family: "Bevan", serif;
   margin-bottom: 0;
 }
 
-.contact h2 {
+.contact h3 {
   margin-top: 0;
 }
 
@@ -460,7 +461,7 @@ footer a {
 /* Booking Form Styles */
 
 .booking-container {
-  background-image: url(/assets/booking-background.jpg);
+  background-image: url(/assets/booking-background.webp);
   background-size: 100%;
 
   display: flex;
@@ -618,7 +619,6 @@ footer a {
   .modal {
     height: 90vh;
     width: 90vw;
-   
   }
 
   .modal-content img {
@@ -715,7 +715,6 @@ footer a {
     padding: 12rem 1rem 8rem 1rem;
   }
 }
-
 
 @media only screen and (max-height: 750px) {
   .modal-content img {
